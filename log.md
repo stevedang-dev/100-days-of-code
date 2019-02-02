@@ -1,30 +1,135 @@
 # 100 Days Of Code - Log
+**Link to work:** [React Cryptocurrency Repo](https://github.com/stevedang-dev/React-Cryptocurrency)
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+### Day 0: February 01, 2019 
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**: 
+- Set up the GitHub repo. 
+- Install React Framework on my laptop.
+- Fixed some errors while installing React Framework.
+- Struggled with npm. 
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Thoughts ༼ つ ◕_◕ ༽つ:** 
+- 1% coding and 99% waiting to get the dependencies installed. 
 
-**Link to work:** [Calculator App](http://www.example.com)
+================================================================================================
+### Day 1: February 02, 2019
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+**Today's Progress**: 
+- 
+- 
+-
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 2: February 03, 2019
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Today's Progress**: 
+- 
+- 
+-
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 3: February 04, 2019
 
+**Today's Progress**: 
+- 
+- 
+-
 
-### Day 1: June 27, Monday
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 4: February 05, 2019
 
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
+**Today's Progress**: 
+- 
+- 
+-
 
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 5: February 06, 2019
 
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+**Today's Progress**: 
+- 
+- 
+-
+
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 6: February 07, 2019
+
+**Today's Progress**: 
+- 
+- 
+-
+
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 7: February 08, 2019
+
+**Today's Progress**: 
+- 
+- 
+-
+
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 8: February 09, 2019
+
+**Today's Progress**: 
+- 
+- 
+-
+
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 9: February 10, 2019
+
+**Today's Progress**: 
+- 
+- 
+-
+
+**Thoughts**:
+-
+-
+-
+================================================================================================
+### Day 10: February 11, 2019
+
+**Today's Progress**: 
+- 
+- 
+-
+
+**Thoughts**:
+-
+-
+-
+================================================================================================
