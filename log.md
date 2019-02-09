@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
-**Link to work:** [React Cryptocurrency Repo](https://github.com/stevedang-dev/React-Cryptocurrency)
-**Link to Crypto Currency API:** [Cryptocurrency API](https://api.udilia.com/coins/v1/cryptocurrencies), [API Docs](https://udilia.com/docs/cryptocurrencies/v1)
+1. **Link to work:** [React Cryptocurrency Repo](https://github.com/stevedang-dev/React-Cryptocurrency)
+2. **Link to Crypto Currency API:** [Cryptocurrency API](https://api.udilia.com/coins/v1/cryptocurrencies), [API Docs](https://udilia.com/docs/cryptocurrencies/v1)
 
 ### Day 1: February 01, 2019 
 
@@ -146,7 +146,7 @@ this.setState({ loading: true });
 this.setState({ currencies: data.currencies, loading: false });
 this.setState({ error: error.errorMessage, loading: false });
 ```
-- Every times the data changed, state object updates the data - Re-renders.
+- Every time the data changed, state object updates the data - Re-renders.
 - Understood how the component make a get request call.
 - Source code:
 ```
@@ -211,17 +211,60 @@ export default List;
 
 
 ===================================================================================
-### Day 5: February 05, 2019
+### Day 5, 6, 7, 8: February 05, 06, 07, 08, 2019
+- Tests, assignments and work took a lot of time away for side prject. 
+- Coming up midterns, assignments and work.
 
 **Today's Progress**: 
-- 
-- 
--
+- Understood the reponse, reject, resolve in Promises. 
+- Created the Promise reponse handler to process reponse either sucess or not.
+```
+export const handleResponse = (response) => {
+    return response.json().then(json => {
+        return response.ok ? json : Promise.reject(json);
+    });
+}
+```
+- Array.map(item => (item.data));
+```
+<div>
+    {this.state.currencies.map((currency) => (
+        <div>
+            {currency.id}
+        </div>
+    ))}
+</div>
+```
+- Change the percentage and the arrow based on the percentage:
+```
+renderChangePercent(percent) {
+    if (percent > 0) {
+        return <span className="percent-raised">{percent}% &uarr;</span>
+    } else if (percent < 0) {
+        return <span className="percent-fallen">{percent}% &darr;</span>
+    } else {
+        return <span>{percent}%</span>
+    }
+}
+```
+- ES6 fun stuff:
+```
+// ES6:
+// const loading = this.state.loading;
+// const error = this.state.error;
+// const currencies = this.state.currencies;
+
+const { loading, error, currencies } = this.state;
+```
+- Reusable api:
+```
+export const API_URL = 'https://api.udilia.com/coins/v1'; 
+```
 
 **Thoughts ༼ つ ◕_◕ ༽つ:** 
--
--
--
+- Busy, busy, busy but I got back to the game. Let's do this.
+
+
 ===================================================================================
 ### Day 6: February 06, 2019
 
