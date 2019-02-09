@@ -1,6 +1,10 @@
 # 100 Days Of Code - Log
 1. **Link to work:** [React Cryptocurrency Repo](https://github.com/stevedang-dev/React-Cryptocurrency)
 2. **Link to Crypto Currency API:** [Cryptocurrency API](https://api.udilia.com/coins/v1/cryptocurrencies), [API Docs](https://udilia.com/docs/cryptocurrencies/v1)
+3. **Quick Look:**
+
+![ss1](https://user-images.githubusercontent.com/32247767/52514147-6abc4180-2bdd-11e9-9380-ee63b4554e28.png)
+
 
 ### Day 1: February 01, 2019 
 
