@@ -270,17 +270,60 @@ export const API_URL = 'https://api.udilia.com/coins/v1';
 
 
 ===================================================================================
-### Day 6: February 06, 2019
+### Day 9: February 09, 2019
 
 **Today's Progress**: 
-- 
-- 
--
+- Understood how properties work in React.
+- Passing data from parent component => child component:
+- Parent Component:
+```
+renderChangePercent(percent) {
+    if (percent > 0) {
+        return <span className="percent-raised">{percent}% &uarr;</span>
+    } else if (percent < 0) {
+        return <span className="percent-fallen">{percent}% &darr;</span>
+    } else {
+        return <span>{percent}%</span>
+    }
+}
 
-**Thoughts**:
--
--
--
+const { loading, error, currencies } = this.state;
+
+<Table 
+    currencies={currencies}
+    renderChangePercent={this.renderChangePercent}    
+/>
+```
+- Child Component:
+```
+const Table = (props) => {
+...
+<tbody className="Table-body">
+    {props.currencies.map((currency) => (
+        <tr key={currency.id}>
+...
+<td>
+    {props.renderChangePercent(currency.percentChange24h)}
+</td>
+}
+```
+- Check property type by the prop-type dependency.
+```
+// Checking type:
+Table.propTypes = {
+    /* Error:
+        Warning: Failed prop type: Invalid prop `currencies` of type 
+        `array` supplied to `Table`, expected `string`.
+    */
+    // currencies: PropTypes.string,
+    currencies: PropTypes.array.isRequired,
+    renderChangePercent: PropTypes.func.isRequired
+}
+```
+
+**Thoughts ༼ つ ◕_◕ ༽つ:** 
+- Stay hungry and humble. 
+
 ===================================================================================
 ### Day 7: February 07, 2019
 
@@ -289,26 +332,26 @@ export const API_URL = 'https://api.udilia.com/coins/v1';
 - 
 -
 
-**Thoughts**:
+**Thoughts ༼ つ ◕_◕ ༽つ:** 
 -
 -
 -
 ===================================================================================
 ### Day 8: February 08, 2019
 
-**Today's Progress**: 
+**Today's Progress ༼ つ ◕_◕ ༽つ:** 
 - 
 - 
 -
 
-**Thoughts**:
+**Thoughts ༼ つ ◕_◕ ༽つ:** 
 -
 -
 -
 ===================================================================================
 ### Day 9: February 09, 2019
 
-**Today's Progress**: 
+**Today's Progress ༼ つ ◕_◕ ༽つ:** 
 - 
 - 
 -
@@ -325,7 +368,7 @@ export const API_URL = 'https://api.udilia.com/coins/v1';
 - 
 -
 
-**Thoughts**:
+**Thoughts ༼ つ ◕_◕ ༽つ:** 
 -
 -
 -
@@ -337,7 +380,7 @@ export const API_URL = 'https://api.udilia.com/coins/v1';
 - 
 -
 
-**Thoughts**:
+**Thoughts ༼ つ ◕_◕ ༽つ:** 
 -
 -
 -
