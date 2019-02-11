@@ -325,15 +325,77 @@ Table.propTypes = {
 - Stay hungry and humble. 
 
 ===================================================================================
-### Day 7: February 07, 2019
+### Day 10: February 10, 2019
 
 **Today's Progress**: 
-- 
-- 
--
+- More practice on sharing data through props in React.
+- There are two ways to pass props' data to a function.
+```
+1. onClick={() => handlePaginationClick('prev')}
+2. onClick={handlePaginationClick.bind(this, 'next')}
+```
+- Bind the method in the constructor:
+```
+Method 1:
+    handlePaginationClick = (direction) => {
+        let nextPage = this.state.page;
+        nextPage = (direction === 'next') ? nextPage + 1 : nextPage - 1;
+        this.setState({ page: nextPage });
+    }
+
+Method 2:
+    this.handlePaginationClick = this.handlePaginationClick.bind(this);
+
+```
+- this.setState takes a call back as its second params
+```
+this.setState({ page: nextPage }, () => {
+    this.fetchCurrencies();
+});
+```
+- Source Code:
+```
+import React from 'react';
+import './Pagination.css';
+import PropTypes from 'prop-types';
+
+const Pagination = (props) => {
+    const { page, totalPages, handlePaginationClick } = props;
+    return (
+        <div className="Pagination">
+            <button className="Pagination-button"
+                onClick={() => handlePaginationClick('prev')}
+                disabled={page <= 1}
+            >
+                &larr;
+            </button>
+            <span className="Pagination-info">
+                Page <b>{page}</b> of <b>{totalPages}</b>
+            </span>
+            <button 
+                className="Pagination-button"
+                onClick={() => handlePaginationClick('next')}
+                disabled={page >= totalPages}
+            >
+                &rarr;
+            </button>
+        </div>
+    );
+}
+
+// page, totalPages, handlePaginationClick
+Pagination.prototype = {
+    page: PropTypes.number.isRequired,
+    totalPages: PropTypes.number.isRequired,
+    handlePaginationClick: PropTypes.func.isRequired,
+}
+
+export default Pagination;
+
+```
 
 **Thoughts ༼ つ ◕_◕ ༽つ:** 
--
+- Understood more about props and shared data.
 -
 -
 ===================================================================================
